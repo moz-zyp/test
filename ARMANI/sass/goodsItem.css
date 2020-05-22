@@ -1,0 +1,109 @@
+.wrap {
+  width: 100%; }
+  .wrap::after {
+    content: ".";
+    clear: both;
+    height: 0;
+    visibility: hidden; }
+
+.top {
+  padding: 20px 0 20px 30px;
+  height: 16px;
+  border-bottom: 1px solid #cccccc; }
+  .top a, .top span {
+    display: block;
+    float: left;
+    font-size: 12px;
+    line-height: 16px;
+    color: #b8b8b8;
+    margin: 0 2px; }
+
+.bottom::after {
+  content: ".";
+  visibility: hidden;
+  height: 0;
+  clear: both;
+  display: block; }
+
+.left {
+  width: 215px;
+  padding: 0 15px;
+  float: left; }
+  .left p:first-of-type {
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+    padding: 20px 10px 20px;
+    border-bottom: 1px solid #cccccc;
+    font-weight: 800; }
+  .left p:nth-of-type(2) {
+    padding: 10px 10px; }
+    .left p:nth-of-type(2) a {
+      font-size: 12px;
+      line-height: 32px;
+      color: #666666;
+      text-decoration: underline;
+      display: block;
+      height: 32px; }
+  .left p:nth-of-type(3) {
+    font-size: 14px;
+    line-height: 19px;
+    color: #000000;
+    margin: 11px 0;
+    padding: 0 10px; }
+  .left p:nth-of-type(4) {
+    height: 60px;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc; }
+  .left p:nth-of-type(5) {
+    height: 60px; }
+  .left span:nth-of-type(1) {
+    float: left;
+    font-size: 12px;
+    line-height: 60px;
+    color: #000000;
+    margin-left: 10px; }
+  .left span:nth-of-type(2) {
+    float: right;
+    font-size: 36px;
+    line-height: 60px;
+    color: #999999;
+    font-weight: 100; }
+
+.right {
+  border-left: 1px solid #cccccc;
+  padding: 0 15px;
+  width: 84%;
+  float: left; }
+  .right .top {
+    height: 68px;
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid #cccccc; }
+    .right .top span:first-of-type {
+      font-size: 18px;
+      line-height: 68px;
+      color: #333333;
+      float: left; }
+    .right .top span:nth-of-type(2) {
+      font-size: 12px;
+      line-height: 68px;
+      color: #333333;
+      float: right;
+      margin-right: 10px;
+      cursor: default; }
+    .right .top ul {
+      position: absolute;
+      right: 5px;
+      top: 65px;
+      border: 1px solid #cccccc;
+      display: none; }
+      .right .top ul li {
+        height: 25px;
+        font-size: 12px;
+        line-height: 25px;
+        color: #333333;
+        padding: 0 5px;
+        cursor: default; }
+
+/*# sourceMappingURL=goodsItem.css.map */

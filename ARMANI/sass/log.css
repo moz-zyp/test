@@ -1,0 +1,90 @@
+#main {
+  width: 1000px;
+  margin: auto;
+  padding: 140px;
+  height: 850px; }
+  #main .mainLeft {
+    float: left;
+    width: 725px; }
+    #main .mainLeft .mainLeftHeader {
+      height: 65px;
+      background: #eeeeee; }
+      #main .mainLeft .mainLeftHeader span:first-of-type {
+        float: left;
+        font-size: 28px;
+        line-height: 38px;
+        color: #bk;
+        padding: 14px 0 0 20px; }
+      #main .mainLeft .mainLeftHeader span:last-of-type {
+        float: right;
+        padding: 27px 20px 0 0;
+        font-size: 14px;
+        line-height: 19px;
+        color: #bk; }
+        #main .mainLeft .mainLeftHeader span:last-of-type a {
+          color: #666666;
+          text-decoration: underline; }
+  #main .mainRight {
+    float: left;
+    width: 225px;
+    margin-left: 50px; }
+    #main .mainRight .top {
+      padding: 26px 25px 30px;
+      background-color: #eeeeee;
+      margin-bottom: 10px; }
+      #main .mainRight .top p {
+        font-size: 14px;
+        line-height: 14px;
+        color: #bk;
+        height: 14px;
+        margin-bottom: 10px;
+        text-align: center; }
+      #main .mainRight .top p:first-of-type {
+        font-size: 14px;
+        line-height: 18px;
+        color: #bk;
+        height: 18px;
+        text-align: center;
+        padding-bottom: 20px;
+        margin-bottom: 25px;
+        border-bottom: 1px solid #c5c5c5; }
+      #main .mainRight .top a {
+        display: block;
+        width: 92px;
+        margin: 17px auto 0;
+        padding: 8px 14px;
+        font-size: 14px;
+        line-height: 18px;
+        color: #ffffff;
+        background: #000;
+        text-align: center; }
+    #main .mainRight .bottom {
+      padding: 26px 25px 30px;
+      background-color: #eeeeee; }
+      #main .mainRight .bottom p {
+        font-size: 14px;
+        line-height: 14px;
+        color: #bk;
+        height: 14px;
+        margin-bottom: 10px;
+        text-align: center; }
+      #main .mainRight .bottom p:first-of-type {
+        font-size: 14px;
+        line-height: 18px;
+        color: #bk;
+        height: 18px;
+        text-align: center;
+        padding-bottom: 20px;
+        margin-bottom: 25px;
+        border-bottom: 1px solid #c5c5c5; }
+      #main .mainRight .bottom p {
+        text-align: left;
+        padding-top: 5px; }
+        #main .mainRight .bottom p a {
+          color: #000000;
+          text-decoration: underline; }
+      #main .mainRight .bottom p:last-of-type {
+        text-align: center;
+        margin-top: 20px; }
+
+/*# sourceMappingURL=log.css.map */

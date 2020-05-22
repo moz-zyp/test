@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="sass/shopping.css">
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="js/shoppingAjax.js"></script>
+    <script src="js/stepNum.js"></script>
+    <script src="js/shoppingTable.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+<header>
+    <img src="images/logo.png" alt="">
+</header>
+<section>
+    <div class="headerBottom">
+        <aside class="hbLeft">
+            <p>1</p>
+            <p>我的购物袋</p>
+        </aside>
+        <aside class="hbCenter">
+            <p>2</p>
+            <p>支付及物流</p>
+        </aside>
+        <aside class="hbRight">
+            <p>3</p>
+            <p>成功提交订单</p>
+        </aside>
+    </div>
+    <div id="shoppingTable">
+        <a href="goodsItem.html" class="shopAgain"><继续购物</a>
+        <h1 class="tableTitle"></h1>
+        <div id="shoppingList">
+
+        </div>
+    </div>
+</section>
+<footer id="footer"></footer>
+</body>
+<script>
+    var shopping=new Main(document.getElementById("shoppingList"));
+    $("#footer").load("./footer.html")
+</script>
+</html>

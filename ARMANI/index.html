@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="./js/carousel.js"></script>
+</head>
+<body>
+<div id="header" style="height: 138px"></div>
+<section>
+    <div class="banner"><img src="images/text_04.jpg" alt="" style="width: 100%"></div>
+    <div class="banner"><img src="images/text_01.jpg" alt="" style="width: 100%"></div>
+    <div class="banner"><img src="images/text_02.jpg" alt="" style="width: 100%"></div>
+    <div class="banner"><img src="images/text_03.jpg" alt="" style="width: 100%"></div>
+    <div class="banner"><img src="images/text_05.jpg" alt="" style="width: 100%"></div>
+    <div id="carousel">
+    </div>
+</section>
+<div id="footer"></div>
+<script>
+
+    $("#header").load("header.html");
+    var imgList=["goods_1.jpg","goods_2.jpg","goods_3.jpg","goods_4.jpg","goods_5.jpg"];
+    var carouselDiv=document.getElementById("carousel");
+    var carousel=new Carousel(imgList,carouselDiv);
+    $("#footer").load("footer.html");
+
+</script>
+</body>
+</html>

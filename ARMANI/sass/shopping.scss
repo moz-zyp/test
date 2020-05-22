@@ -1,0 +1,67 @@
+@mixin font($fz,$lh,$c:#000000){
+    @if($fz){
+        font-size:$fz+px;
+    }@if($lh){
+        line-height:$lh+px;
+    }@if($c){
+        color:$c;
+    }
+}
+
+header{
+    height:96px;
+    width:100%;
+    border-bottom: 2px solid #000000;
+    img{
+        display: block;
+        width:240px;
+        height:54px;
+        padding:21px  0;
+        margin:0 auto;
+    }
+}
+.headerBottom{
+    width:1540px;
+    height:60px;
+    padding:50px 0;
+    margin:0 auto;
+    aside{
+        width:500px;
+        float: left;
+        padding-bottom:20px;
+        border-bottom: 4px solid #d3d3d3;
+        margin-left: 20px;
+        p:first-of-type{
+            @include font(14,17,#afafaf);
+            padding-left: 10px;
+            height:17px;
+        }
+        p:nth-of-type(2){
+            @include font(14,19,#afafaf);
+            padding-left: 10px;
+            height:19px;
+        }
+    }
+    aside:first-of-type{
+        border-bottom: 4px solid #000000;
+        margin-left: 0;
+        p{
+            color:#000000;
+        }
+    }
+}
+#shoppingTable{
+    width:1200px;
+    margin:0 auto;
+    .shopAgain{
+        display: block;
+        height:32px;
+        width:100px;
+        @include font(18,32,#666666);
+    }
+    .tableTitle{
+        @include font(30,40);
+        font-weight:bold;
+        padding:50px 0;
+    }
+}

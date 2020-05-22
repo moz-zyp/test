@@ -1,0 +1,128 @@
+header {
+  height: 96px;
+  padding: 0 30px; }
+  header .headerLeft {
+    float: left;
+    padding: 28px 0;
+    height: 35px; }
+    header .headerLeft a {
+      padding: 8px 20px;
+      font-size: 14px;
+      line-height: 19px;
+      color: blackpx;
+      float: left; }
+    header .headerLeft a:first-of-type {
+      border-right: 1px solid #cccccc; }
+  header .headerLogo {
+    width: 240px;
+    padding: 27px 0 19px;
+    position: relative;
+    margin: 0 auto;
+    text-align: center; }
+    header .headerLogo a img {
+      width: 100%; }
+  header .headerRight {
+    height: 35px;
+    padding: 28px 0;
+    float: right;
+    position: relative; }
+    header .headerRight a {
+      font-size: 14px;
+      line-height: 19px;
+      color: blackpx;
+      padding: 8px 20px;
+      border-right: 1px solid #cccccc;
+      overflow: hidden; }
+    header .headerRight a:last-of-type {
+      border-right: none; }
+      header .headerRight a:last-of-type span {
+        padding-left: 20px;
+        background: url("../images/elements.png") no-repeat left -68px; }
+
+#nav {
+  height: 42px;
+  background: #151515;
+  text-align: center;
+  position: relative; }
+  #nav ul li {
+    float: left; }
+    #nav ul li a {
+      font-size: 14px;
+      line-height: 42px;
+      color: #ccccccpx;
+      display: block;
+      height: 42px;
+      padding: 0 22px; }
+  #nav ul .search {
+    position: relative; }
+    #nav ul .search .searchValue {
+      padding: 0 50px 0 22px;
+      margin-left: 42px;
+      width: 48px;
+      height: 40px;
+      font-size: 14px;
+      line-height: 40px;
+      color: #bkpx;
+      border-top: 1px solid #cc;
+      border-right: 0px solid #cc;
+      border-bottom: 1px solid #cc;
+      border-left: 0px solid #cc;
+      background-color: #fff; }
+    #nav ul .search .searchIcon {
+      position: absolute;
+      width: 23px;
+      height: 22px;
+      position: absolute;
+      left: 0px;
+      top: 12px;
+      right: 15px;
+      background: url("../images/elements.png") no-repeat 0 -1300px; }
+  #nav ul .gwd {
+    display: none; }
+    #nav ul .gwd a {
+      height: 19px;
+      line-height: 19px;
+      margin: 12px 0 11px 25px;
+      padding-left: 22px;
+      background: url("../images/elements.png") no-repeat 0 -30px; }
+  #nav .navIcon {
+    position: absolute;
+    left: 10px;
+    top: 4px;
+    width: 33px;
+    height: 34px;
+    display: none;
+    background: url("../images/elements.png") no-repeat 0 -875px; }
+
+#log {
+  position: absolute;
+  left: 0px;
+  top: 75px;
+  width: 650px;
+  height: 400px;
+  display: none;
+  padding: 50px;
+  right: 0;
+  background: #ffffff;
+  z-index: 10000;
+  border: 1px solid #cccccc; }
+  #log .logLeft {
+    width: 300px;
+    float: left; }
+    #log .logLeft input {
+      border: 1px solid #cccccc;
+      font-size: 12px;
+      line-height: 35px;
+      height: 35px;
+      padding-left: 16px;
+      width: 280px;
+      margin-bottom: 20px; }
+    #log .logLeft p:first-of-type {
+      font-size: 24px;
+      line-height: 24px;
+      color: #bkpx;
+      height: 24px;
+      font-weight: bold;
+      margin-bottom: 30px; }
+
+/*# sourceMappingURL=header.css.map */

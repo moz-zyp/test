@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="js/carousel.js"></script>
+</head>
+<body>
+<script>
+    var imgList=["goods_1.jpg","goods_2.jpg","goods_3.jpg","goods_4.jpg","goods_5.jpg"];
+    var carousel=new Carousel(imgList,document.body);
+    window.addEventListener("resize",resizeHandler);
+    function resizeHandler(e) {
+        console.log("aaaa");
+        if(carousel){
+            carousel=null;
+        };
+        carousel=new Carousel(imgList,document.body);
+    }
+   /*var log=encodeURIComponent(JSON.stringify({
+       type:0x31,
+       value:{
+           email:"906012952@qq.com",
+           password:"123456"
+       }
+   }));
+
+   var search=encodeURIComponent(JSON.stringify({
+       type:0x33,
+       value:{
+           email:"906012952@qq.com"
+       }
+   }));
+
+   var signUp=encodeURIComponent(JSON.stringify({
+       type: 0x32,
+       value: {
+           sex: "男",
+           password: "123456",
+           name: "赵",
+           email: "2842701@qq.com",
+           tel: 18434399813
+       }
+   }));
+
+/!*   var xhr=new XMLHttpRequest();
+   xhr.open("POST","10.9.25.246");
+   xhr.addEventListener("readystatechange")*!/
+
+   $.ajax({
+       type:"POST",
+       url:"http://10.9.25.246:3000",
+       data:signUp,
+       success:function(data){
+            console.log(JSON.parse(decodeURIComponent(data)));
+        }
+   });
+*/
+
+</script>
+</body>
+</html>

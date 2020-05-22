@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="js/stepNum.js"></script>
+    <script src="js/shoppingTable.js"></script>
+</head>
+<body>
+<script>
+    var data=[
+        {id:1001,imgSrc:"./images/goods1.png",num:1,sum:820,selected:true,title:"阿玛尼寄情男士香水礼盒",standards:"礼盒",price:820},
+        {id:1002,imgSrc:"./images/goods2.png",num:1,sum:650,selected:true,title:"寄情男士香水（浓情版）",standards:"40 ml",price:650},
+        {id:1003,imgSrc:"./images/goods3.png",num:1,sum:820,selected:true,title:"寄情男士香水",standards:"50 ml",price:820}
+        ];
+    var shopping=new ShoppingTable(document.body,data);
+</script>
+</body>
+</html>

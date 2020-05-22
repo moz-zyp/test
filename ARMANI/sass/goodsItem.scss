@@ -1,0 +1,142 @@
+@mixin wh($w:"100%",$h:"100%"){
+    width:$w+"px";
+    height: $h+"px";
+}
+
+@mixin font($fz,$lh,$c:#000000){
+    @if($fz){
+        font-size:$fz+px;
+    }@if($lh){
+    line-height:$lh+px;
+}@if($c){
+    color:$c;
+}
+}
+
+@mixin position($p,$l,$t){
+    @if($p){
+        position: $p;
+        @if($l){
+            left: $l+px;
+        }
+        @if($t){
+            top:$t+px;
+        }
+    }
+}
+
+@mixin border($t,$r,$b,$l,$s,$c){
+    border-top:$t+px $s $c;
+    border-right: $r+px $s $c;
+    border-bottom:$b+px $s $c;
+    border-left:$l+px $s $c;
+}
+
+.wrap{
+    width:100%;
+    &::after{
+        content: ".";
+        clear: both;
+        height:0;
+        visibility: hidden;
+    }
+}
+.top{
+    padding:20px 0 20px 30px;
+    height:16px;
+    border-bottom:1px solid #cccccc;
+    a,span{
+        display: block;
+        float: left;
+        @include font(12,16,#b8b8b8);
+        margin:0 2px;
+    }
+}
+.bottom{
+    &::after{
+        content:".";
+        visibility: hidden;
+        height:0;
+        clear: both;
+        display: block;
+    }
+}
+.left{
+    width: 215px;
+    padding:0 15px;
+    float: left;
+    p:first-of-type{
+        @include font(18,25);
+        padding:20px 10px 20px;
+        border-bottom:1px solid #cccccc;
+        font-weight:800;
+    }
+    p:nth-of-type(2){
+        padding:10px 10px;
+        a{
+            @include font(12,32,#666666);
+            text-decoration: underline;
+            display: block;
+            height:32px;
+        }
+    }
+    p:nth-of-type(3){
+        @include font(14,19,#000000);
+        margin:11px 0;
+        padding:0 10px;
+    }
+    p:nth-of-type(4){
+        height: 60px;
+        border-top:1px solid #cccccc;
+        border-bottom:1px solid #cccccc;
+    }
+    p:nth-of-type(5){
+        height:60px;
+    }
+    span:nth-of-type(1){
+        float: left;
+        @include font(12,60,#000000);
+        margin-left: 10px;
+    }
+    span:nth-of-type(2){
+        float: right;
+        @include font(36,60,#999999);
+        font-weight:100;
+    }
+}
+.right{
+    border-left: 1px solid #cccccc;
+    padding:0 15px;
+    width: 84%;
+    float: left;
+    .top{
+        height:68px;
+        width: 100%;
+        position: relative;
+        border-bottom: 1px solid #cccccc;
+        span:first-of-type{
+            @include font(18,68,#333333);
+            float: left;
+        }
+        span:nth-of-type(2){
+            @include font(12,68,#333333);
+            float: right;
+            margin-right: 10px;
+            cursor: default;
+        }
+        ul{
+            position: absolute;
+            right:5px;
+            top:65px;
+            border:1px solid #cccccc;
+            display: none;
+            li{
+                height:25px;
+                @include font(12,25,#333333);
+                padding:0 5px;
+                cursor: default;
+            }
+        }
+    }
+
+}

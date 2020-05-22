@@ -1,0 +1,58 @@
+header {
+  height: 96px;
+  width: 100%;
+  border-bottom: 2px solid #000000; }
+  header img {
+    display: block;
+    width: 240px;
+    height: 54px;
+    padding: 21px  0;
+    margin: 0 auto; }
+
+.headerBottom {
+  width: 1540px;
+  height: 60px;
+  padding: 50px 0;
+  margin: 0 auto; }
+  .headerBottom aside {
+    width: 500px;
+    float: left;
+    padding-bottom: 20px;
+    border-bottom: 4px solid #d3d3d3;
+    margin-left: 20px; }
+    .headerBottom aside p:first-of-type {
+      font-size: 14px;
+      line-height: 17px;
+      color: #afafaf;
+      padding-left: 10px;
+      height: 17px; }
+    .headerBottom aside p:nth-of-type(2) {
+      font-size: 14px;
+      line-height: 19px;
+      color: #afafaf;
+      padding-left: 10px;
+      height: 19px; }
+  .headerBottom aside:first-of-type {
+    border-bottom: 4px solid #000000;
+    margin-left: 0; }
+    .headerBottom aside:first-of-type p {
+      color: #000000; }
+
+#shoppingTable {
+  width: 1200px;
+  margin: 0 auto; }
+  #shoppingTable .shopAgain {
+    display: block;
+    height: 32px;
+    width: 100px;
+    font-size: 18px;
+    line-height: 32px;
+    color: #666666; }
+  #shoppingTable .tableTitle {
+    font-size: 30px;
+    line-height: 40px;
+    color: #000000;
+    font-weight: bold;
+    padding: 50px 0; }
+
+/*# sourceMappingURL=shopping.css.map */

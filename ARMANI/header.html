@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <script src="js/ajax.js" defer></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+</head>
+<body>
+<header>
+    <div class="headerLeft">
+        <a href="">专柜查询</a>
+        <a href="">帮助中心</a>
+    </div>
+    <div class="headerRight">
+        <a href="">订阅电子杂志</a>
+        <a href="" id="logText"></a>
+        <a href="./shopping.html"><span>
+            我的购物袋
+        </span></a>
+        <div id="leave">
+            <div class="h_left">
+                <p>我的账号</p>
+                <p id="p2"></p>
+                <ul>
+                    <li><a href="">个人资料</a></li>
+                    <li><a href="">收货地址</a></li>
+                    <li><a href="">我的订单</a></li>
+                    <li><a href="">我的试用装</a></li>
+                    <li><a href="">我的星愿单</a></li>
+                </ul>
+            </div>
+            <div class="h_right">
+                <p><span id="leaveBtn">登出</span></p>
+                <p>会员权益</p>
+                <p>创建您的阿玛尼账号，奢享以下权利：</p>
+                <ul>
+                    <li>尊享官网及生日专属礼遇</li>
+                    <li>获悉品牌最新美妆资讯及官网活动</li>
+                    <li>及时查询历史订单及物流信息</li>
+                    <li>快速结算通道下单更方便快捷</li>
+                </ul>
+            </div>
+        </div>
+        <div id="log">
+            <div class="logLeft">
+                <p>登录</p>
+                <input type="text" placeholder="邮箱/手机*" id="user">
+                <input type="password" placeholder="您的密码*" id="password">
+                <p>
+                    <input type="checkbox" id="recordName">
+                    <label for="recordName">记住用户名</label>
+                    <a href="">忘记密码</a>
+                </p>
+                <input type="button" value="登录" id="submit">
+                <!--<hr>
+                <p>使用合作网站账号登录</p>
+                <p></p>-->
+            </div>
+            <div class="logRight">
+                <p>新用户注册</p>
+                <p>注册成为阿玛尼美妆官网会员，下单流程更流畅，并可查看您的订单记录，追踪订单物流，第一时间获取官网的最新资讯。</p>
+                <input type="button" value="立即注册" id="signUp">
+            </div>
+        </div>
+    </div>
+    <div class="headerLogo">
+        <a href="">
+            <img src="./images/logo.png" alt="logo">
+        </a>
+    </div>
+</header>
+<nav id="nav">
+    <ul class="navUl">
+        <li><a href="">最新资讯</a></li>
+        <li><a href="">彩妆专区</a></li>
+        <li><a href="">护肤专区</a></li>
+        <li><a href="goodsItem.html">香水专区</a></li>
+        <li><a href="">明星产品</a></li>
+        <li><a href="">官网礼遇</a></li>
+        <li><a href="">大师匠心</a></li>
+        <li class="search">
+            <div class="searchValue">红管</div>
+            <i class="searchIcon"></i>
+        </li>
+        <li class="gwd"><a href="./shopping.html">我的购物袋</a></li>
+    </ul>
+    <span class="navIcon"></span>
+</nav>
+
+<script src="./js/header.js"></script>
+<!--<script>-->
+    <!--//    $("#header").load("header.html",function () {-->
+    <!--console.log($(".navUl").children().first().width());-->
+    <!--//    });-->
+    <!--var nav=document.querySelector("#nav");-->
+    <!--var navUl=document.querySelector(".navUl");-->
+    <!--getUlWidth();-->
+    <!--function getUlWidth() {-->
+        <!--var len;-->
+        <!--if(!this.bool){-->
+            <!--this.bool=true;-->
+            <!--len=nav.firstElementChild.children.length-1;-->
+        <!--}else{-->
+            <!--len=nav.firstElementChild.children.length;-->
+        <!--}-->
+
+        <!--var width=0;-->
+        <!--for(var i=0;i<len;i++){-->
+            <!--console.log(navUl.children[i],getComputedStyle(navUl.children[i]));-->
+            <!--width+=navUl.children[i].offsetWidth;-->
+        <!--}-->
+        <!--nav.style.paddingLeft=(document.documentElement.clientWidth-width)/2+"px";-->
+        <!--nav.style.paddingRight=(document.documentElement.clientWidth-width)/2+"px";-->
+    <!--}-->
+<!--</script>-->
+</body>
+</html>

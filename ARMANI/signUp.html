@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <link rel="stylesheet" href="sass/signUp.css">
+    <script src="js/signUp.js" defer></script>
+    <script src="js/ajax.js" defer></script>
+</head>
+<body>
+<div id="header"></div>
+<section>
+    <div id="main">
+        <div class="mainLeft">
+            <div class="mainLeftHeader">
+                <span>注册成为会员</span>
+                <span>我已是注册用户，前往<a href="">登录</a></span>
+            </div>
+            <form action="" method="post">
+                <fieldset>
+                    <div>
+                        <label>称谓</label>
+                        <input type="radio" name="sex" value="男士" ><span>男士</span>
+                        <input type="radio" name="sex" value="女士" checked><span>女士</span>
+                    </div>
+                    <div><span>(*必填项)</span></div>
+                    <div>
+                        <label for="email">您的邮箱 *</label>
+                        <input type="text" name="email" id="email">
+                        <span class="span">请填写正确邮箱</span>
+                    </div>
+                    <div>
+                        <label for="name">您的姓名 *</label>
+                        <input type="text" name="name" id="name">
+                        <span class="span">请填写正确姓名</span>
+                    </div>
+                    <div>
+                        <label for="pass">密码 *</label>
+                        <input type="password" name="pass" id="pass">
+                        <aside class="passBottom">
+                            <i></i>
+                        </aside>
+                        <span class="span">请至少输入6个字符,至多20个字符</span>
+                    </div>
+                    <div>
+                        <label for="passAgain">确认密码 *</label>
+                        <input type="password" name="passAgain" id="passAgain">
+                        <aside class="passBottom">
+                            <i></i>
+                        </aside>
+                        <span class="span">请至少输入6个字符</span>
+                    </div>
+                    <div>
+                        <label for="tel">您的手机 *</label>
+                        <input type="text" name="tel" id="tel">
+                        <span class="span">请填写正确手机</span>
+                    </div>
+                    <div class="null">
+                    </div>
+                    <div class="yzm">
+                        <label for="yzm">请输入验证码 *</label>
+                        <input type="text" name="yzm" id="yzm">
+                        <span></span>
+                        <span>看不清 <a href="">换一张</a></span>
+                    </div>
+                    <div class="telyz">
+                        <label for="telyz">短信验证码</label>
+                        <input type="text" name="telyz" id="telyz">
+                        <span>获取短信验证码</span>
+                    </div>
+                    <div class="ydtk">
+                        <input type="checkbox" id="read" name="read">
+                        <span>我同意依照本使用条款和隐私政策对我的个人信息进行收集和使用；我已阅读并确认被给予充分机会理解该使用条款和隐私政策的内容。</span>
+                    </div>
+                    <div class="formBottom">
+                        <span>您填写本页面信息，将被视为您同意阿玛尼（中国）品牌为您更完善的服务和推介，将您的个人信息提供给品牌经销商和联盟企业。</span>
+                    </div>
+                </fieldset>
+                <input type="submit" value="立即注册" name="submit" id="submit">
+            </form>
+        </div>
+        <div class="mainRight">
+            <div class="top">
+                <p>客服中心</p>
+                <p>如有任何问题，请联系我们</p>
+                <p>400-820-4888</p>
+                <a href="">在线咨询</a>
+            </div>
+            <div class="bottom">
+                <p>常见问题</p>
+                <p>
+                    <a href="">如何下订单？</a>
+                </p>
+                <p><a href="">如何查看订单配送状况？</a></p>
+                <p><a href="">如何修改和取消订单</a></p>
+                <p><a href="">查看所有</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+<div id="footer"></div>
+<script>
+    $("#header").load("header.html");
+    $("#footer").load("footer.html");
+</script>
+</body>
+</html>
